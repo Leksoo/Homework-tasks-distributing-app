@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainStudentActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_info"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/standard_text_size" />
+
+            <TextView
+                android:id="@+id/tv_name_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/standard_margin"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/standard_text_size"
+                android:maxLines="1"
+                tools:text="abcde" />
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "@string/for_group"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="32sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btn_build"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/button_margins"
+            android:text="@string/build_table"
+            android:textSize="@dimen/standard_text_size"
+            app:fButtonColor="@color/colorPrimaryLight"
+            fbutton:shadowEnabled="false" />
+        
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btn_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/button_margins"
+            android:text="@string/show_table"
+            android:textSize="@dimen/standard_text_size"
+            app:fButtonColor="@color/colorPrimaryLight"
+            fbutton:shadowEnabled="false"/>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btn_clean_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/button_margins"
+            android:text="@string/clean"
+            android:textSize="@dimen/standard_text_size"
+            app:fButtonColor="@color/colorPrimaryLight"
+            fbutton:shadowEnabled="false" />
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

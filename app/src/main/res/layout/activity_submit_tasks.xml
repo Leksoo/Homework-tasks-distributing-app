@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    android:fillViewport="true"
+    tools:context=".activities.SubmitTasksActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:id="@+id/linear_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/single_apply"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/big_text_size" />
+
+                <EditText
+                    android:id="@+id/et_single_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    android:background="@drawable/black_round_borders"
+                    android:inputType="textVisiblePassword|number"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/big_text_size" />
+            </LinearLayout>
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_add_single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/standard_margin"
+                android:paddingLeft="@dimen/standard_margin"
+                android:paddingTop="@dimen/standard_margin"
+                android:paddingRight="@dimen/standard_margin"
+                android:paddingBottom="@dimen/standard_margin"
+                android:text="@string/add_apply"
+                android:textAllCaps="false"
+                android:textSize="@dimen/standard_text_size"
+                app:fButtonColor="@color/colorPrimaryLight"
+                fbutton:shadowEnabled="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/from_apply"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/big_text_size" />
+
+                <EditText
+                    android:id="@+id/et_from_apply"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    android:layout_weight="1"
+                    android:imeOptions="actionDone"
+                    android:background="@drawable/black_round_borders"
+                    android:inputType="textVisiblePassword|number"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/big_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    android:text="@string/to_apply"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/big_text_size" />
+
+                <EditText
+                    android:id="@+id/et_to_apply"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_round_borders"
+                    android:imeOptions="actionDone"
+                    android:inputType="textVisiblePassword|number"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/big_text_size" />
+            </LinearLayout>
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_add_many"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/standard_margin"
+                android:paddingLeft="@dimen/standard_margin"
+                android:paddingTop="@dimen/standard_margin"
+                android:paddingRight="@dimen/standard_margin"
+                android:paddingBottom="@dimen/standard_margin"
+                android:text="@string/add_apply"
+                android:textAllCaps="false"
+                android:textSize="@dimen/standard_text_size"
+                app:fButtonColor="@color/colorPrimaryLight"
+                fbutton:shadowEnabled="false" />
+
+        </LinearLayout>
+
+        <com.ifmo.ct.homework.views.ExpandableHeightGridView
+            android:id="@+id/gridView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linear_2"
+            android:layout_below="@+id/linear_1"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:columnWidth="40dp"
+            android:gravity="center"
+            android:isScrollContainer="false"
+            android:horizontalSpacing="10dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+
+        <LinearLayout
+            android:id="@+id/linear_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_submit_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:paddingLeft="@dimen/standard_margin"
+                android:paddingTop="@dimen/standard_margin"
+                android:paddingRight="@dimen/standard_margin"
+                android:paddingBottom="@dimen/standard_margin"
+                android:text="@string/submit"
+                android:textSize="@dimen/standard_text_size"
+                app:fButtonColor="@color/colorPrimaryLight"
+                fbutton:shadowEnabled="false" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_clean_tasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:paddingLeft="@dimen/standard_margin"
+                android:paddingTop="@dimen/standard_margin"
+                android:paddingRight="@dimen/standard_margin"
+                android:paddingBottom="@dimen/standard_margin"
+                android:text="@string/clean"
+                android:textSize="@dimen/standard_text_size"
+                app:fButtonColor="@color/colorPrimaryLight"
+                fbutton:shadowEnabled="false" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

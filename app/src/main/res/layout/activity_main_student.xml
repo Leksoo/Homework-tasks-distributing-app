@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainStudentActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/standard_margin"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_info"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/standard_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_name_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/standard_text_size"
+                    tools:text="abcde" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/standard_margin"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/group_info"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/standard_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_group_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/standard_text_size"
+                    tools:text="abcde" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/standard_margin"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/points_info"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/standard_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_points_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/standard_text_size"
+                    tools:text="abcde" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/standard_margin"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:text="@string/submitted_tasks"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/standard_text_size" />
+
+            <TextView
+                android:id="@+id/tv_submitted_tasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/standard_margin"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:text=""
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/standard_text_size" />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_submit"
+                style="@style/button_margins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/submit"
+                android:textSize="@dimen/standard_text_size"
+                app:fButtonColor="@color/colorPrimaryLight"
+                fbutton:shadowEnabled="false" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_clean"
+                style="@style/button_margins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/clean"
+                android:textSize="@dimen/standard_text_size"
+                app:fButtonColor="@color/colorPrimaryLight"
+                fbutton:shadowEnabled="false" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_show_table"
+                style="@style/button_margins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/show_table"
+                android:textSize="@dimen/standard_text_size"
+                app:fButtonColor="@color/colorPrimaryLight"
+                fbutton:shadowEnabled="false" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

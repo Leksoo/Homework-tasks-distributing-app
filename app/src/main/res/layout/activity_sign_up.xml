@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rg_log_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/standard_margin"
+            android:layout_marginEnd="@dimen/standard_margin"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/student"
+                android:textSize="@dimen/big_text_size" />
+
+            <RadioButton
+                android:id="@+id/rb_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/teacher"
+                android:textSize="@dimen/big_text_size" />
+
+        </RadioGroup>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginEnd="@dimen/standard_margin"
+            android:inputType="textVisiblePassword"
+            android:textSize="@dimen/big_text_size"
+            app:met_autoValidate="true"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelAlwaysShown="true"
+            app:met_floatingLabelText="@string/your_name"
+            app:met_floatingLabelTextSize="@dimen/standard_text_size"
+            app:met_singleLineEllipsis="true"
+            app:met_underlineColor="@color/colorPrimary" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginEnd="@dimen/standard_margin"
+            android:hint="@string/group_edittext_hint"
+            android:inputType="textVisiblePassword"
+            android:textSize="@dimen/big_text_size"
+            app:met_autoValidate="true"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelAlwaysShown="true"
+            app:met_floatingLabelText="@string/group_name"
+            app:met_floatingLabelTextSize="@dimen/standard_text_size"
+            app:met_singleLineEllipsis="true"
+            app:met_underlineColor="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btn_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="@dimen/standard_margin"
+        android:paddingTop="@dimen/standard_margin"
+        android:paddingRight="@dimen/standard_margin"
+        android:paddingBottom="@dimen/standard_margin"
+        android:text="@string/sign_up"
+        android:textSize="@dimen/standard_text_size"
+        app:fButtonColor="@color/colorPrimaryLight"
+        fbutton:shadowEnabled="false" />
+
+</RelativeLayout>

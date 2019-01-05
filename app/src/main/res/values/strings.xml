@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Homework</string>
+    <string name="student">student</string>
+    <string name="teacher">teacher</string>
+    <string name="group_name">Group Name</string>
+    <string name="your_name">Your Name</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="title_activity_main_student">MainStudentActivity</string>
+    <string name="discrete_math">Discrete Math</string>
+    <string name="algorithms">Algorithms</string>
+    <string name="exit">Exit</string>
+    <string name="name_info">Name:</string>
+    <string name="group_info">Group:</string>
+    <string name="points_info">Points:</string>
+    <string name="apply">apply</string>
+    <string name="clean">clean</string>
+    <string name="show_table">show last table</string>
+    <string name="for_group">For group:</string>
+    <string name="build_table">build new table</string>
+    <string name="group_edittext_hint">M3232</string>
+    <string name="loading">loading…</string>
+    <string name="single_apply">single:</string>
+    <string name="from_apply">from</string>
+    <string name="to_apply">to</string>
+    <string name="add_apply">add</string>
+    <string name="submit">submit</string>
+
+    <string name="undefined_error_message">undefined error</string>
+    <string name="to_many_tasks_message">to many tasks</string>
+    <string name="connection_fail_message">connection failed</string>
+    <string name="firebase_error_message">fail to parse firebase data</string>
+    <string name="signed_up_message">Sign Up successfully!</string>
+    <string name="points_updates_message">points updated</string>
+    <string name="successful_submit_message">successful submit</string>
+    <string name="submitted_tasks">submitted tasks:</string>
+    <string name="empty">empty</string>
+    <string name="cleaned_message">successful clean</string>
+    <string name="sheet_links_message">sheet links loaded</string>
+    <string name="google_sheet_fail_message">fail parsing google sheet</string>
+    <string name="user_finding_fail_message">user not found or multiple matching, enter full name</string>
+
+
+</resources>
